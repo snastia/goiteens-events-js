@@ -1,16 +1,13 @@
+import { EvenList } from "./EventList/EventList";
+import { Container } from "./Container/Container";
+import { Title } from "./Title/Title";
+import eventsData from "../events.json";
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+    <Container>
+      <Title/>
+      <EvenList events={eventsData}/>
+    </Container>
   );
 };
