@@ -1,7 +1,7 @@
-export function Title({children}){
+import { TitleEl } from "./Title.styled"
+
+export function Title(){
     return(
-        <div>
-           {children}
-        </div>
+          <TitleEl>24th Core Worlds Coalition Conference</TitleEl>
     )
 }

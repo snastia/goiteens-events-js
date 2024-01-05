@@ -4,10 +4,11 @@ import { CiAlarmOn } from "react-icons/ci";
 import { AiFillCalendar } from "react-icons/ai";
 import { FaPerson } from "react-icons/fa6";
 import { CiLocationOn } from "react-icons/ci";
+import { List } from "./EventList.styled"
 
 export function EvenList({events}){
   return(
-    <ul>
+    <List>
       {events.map((event) => {
         return <EventItem 
         iconLocation={CiLocationOn}
@@ -21,6 +22,6 @@ export function EvenList({events}){
         time={event.time}
         />
       })}
-    </ul>
+    </List>
   )
 }

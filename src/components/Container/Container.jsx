@@ -1,7 +1,9 @@
+import { Cont } from "./Container.styled"
+
 export function Container({children}){
     return(
-        <div>
+        <Cont>
            {children}
-        </div>
+        </Cont>
     )
 }
